@@ -8,16 +8,6 @@ import Table from './components/table'
 import {Container} from "@material-ui/core";
 
 
-const useStyles = makeStyles(theme => ({
-  button: {
-    margin: theme.spacing(1),
-  },
-  input: {
-    display: 'none',
-  },
-}));
-
-
 function App() {
   return (
     <div className='App'>
