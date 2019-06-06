@@ -13,15 +13,12 @@ function App() {
     <div className='App'>
       <Container className='monthOne'>
         <NavBar/>
-        <SimpleCard/>
-        <SimpleCard/>
-        <SimpleCard/>
         <h1>Month 1</h1>
-        <Table/>
+        <SimpleCard/>
         <h1>Month 2</h1>
-        <Table/>
+        <SimpleCard/>
         <h1>Month 3</h1>
-        <Table/>
+        <SimpleCard/>
       </Container>
 
       <Container>
