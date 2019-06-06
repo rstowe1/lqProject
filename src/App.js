@@ -1,7 +1,7 @@
 import React from 'react';
-import {makeStyles} from '@material-ui/core/styles';
+// import {makeStyles} from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-
+import SimpleCard from './components/card';
 import './App.css';
 import NavBar from "./components/header";
 import Table from './components/table'
@@ -13,6 +13,9 @@ function App() {
     <div className='App'>
       <Container className='monthOne'>
         <NavBar/>
+        <SimpleCard/>
+        <SimpleCard/>
+        <SimpleCard/>
         <h1>Month 1</h1>
         <Table/>
         <h1>Month 2</h1>
