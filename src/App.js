@@ -15,18 +15,9 @@ function App() {
 
         <NavBar/>
       <>
-        {months.map(month => <SimpleCard> {month} </SimpleCard>)}
+        {months.map(month => <SimpleCard > {month} </SimpleCard>)}
       </>
-
-      {/*<Container className='monthOne'>*/}
-      {/*  <h1>Month 1</h1>*/}
-      {/*  <SimpleCard/>*/}
-      {/*  <h1>Month 2</h1>*/}
-      {/*  <SimpleCard/>*/}
-      {/*  <h1>Month 3</h1>*/}
-      {/*  <SimpleCard/>*/}
-      {/*</Container>*/}
-
+      
       <Container>
         <Button variant="contained" color="primary" className='submitButton' id='submitButton'>
           Submit

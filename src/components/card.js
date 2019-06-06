@@ -24,13 +24,12 @@ const useStyles = makeStyles({
 
 export default function SimpleCard() {
   const classes = useStyles();
-  const month = ['month 1', 'month 2','month 3']
-
   return (
     <Card className={classes.card}>
       <CardContent>
         <Typography className={classes.title} variant="h5" component="h2">
 {/*This is where the month should be displayed*/}
+
         </Typography>
         <Typography  variant="body2" component="p">
          <Table/>

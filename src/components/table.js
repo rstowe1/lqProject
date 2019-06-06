@@ -35,7 +35,7 @@ class Table extends React.Component {
       <ReactDataGrid
         columns={columns}
         rowGetter={i => this.state.rows[i]}
-        rowsCount={3}
+        rowsCount={rows.length}
         onGridRowsUpdated={this.onGridRowsUpdated}
         enableCellSelect={true}
       />
