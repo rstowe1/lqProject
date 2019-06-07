@@ -6,6 +6,7 @@ import ReactDataGrid from "react-data-grid";
 const columns = [
   {key: "id", name: "DataBaseID", editable: false},
   {key: "title", name: "LQ ID", editable: false},
+  {key: "vendor", name: "Vendor", editable: false},
   {key: "Base Rent", name: "Base Rent", editable: true},
   {key: "Additional Payments", name: "Additional Payments", editable: true},
   // { key: "complete", name: "Total", editable: false }
