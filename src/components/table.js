@@ -1,7 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import ReactDataGrid from "react-data-grid";
-// import "./styles.css";
 
 const columns = [
   {key: "id", name: "DataBaseID", editable: false},

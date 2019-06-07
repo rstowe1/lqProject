@@ -7,18 +7,20 @@ import {Container} from "@material-ui/core";
 
 
 function App() {
-  const months = ['month 1', 'month 2', 'month 3'];
-
+  const months = ['Month 1', 'Month 2', 'Month 3'];
+  // handleClick = (event) => {
+  //
+  // }
   return (
-    <div className='App'>
+    <div className='root'>
 
       <NavBar/>
       <>
-        {/*{months.map(month => <SimpleCard> {month}</SimpleCard>)}*/}
         {months.map(month => <SimpleCard title={month}/>)}
       </>
       <Container>
-        <Button href='' variant="contained" color="primary" className='submitButton' id='submitButton'>
+        <Button href='' type='button' variant="contained" color="primary"
+                className='submitButton' id='submitButton'>
           Submit
         </Button>
       </Container>
