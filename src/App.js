@@ -8,9 +8,12 @@ import {Container} from "@material-ui/core";
 
 function App() {
   const months = ['Month 1', 'Month 2', 'Month 3'];
+
+  // TODO add on click event
   // handleClick = (event) => {
   //
   // }
+
   return (
     <div className='root'>
 

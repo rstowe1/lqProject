@@ -7,13 +7,13 @@ const columns = [
   {key: "vendor", name: "Vendor", editable: false},
   {key: "Base Rent", name: "Base Rent", editable: true},
   {key: "Additional Payments", name: "Additional Payments", editable: true},
-  // { key: "complete", name: "Total", editable: false }
+  { key: "total", name: "Total", editable: false }
 ];
 
 const rows = [
-  {id: 0, title: "Task 1", complete: 20},
-  {id: 1, title: "Task 2", complete: 40},
-  {id: 2, title: "Task 3", complete: 60}
+  {id: 0, title: "Task 1", total: 20},
+  {id: 1, title: "Task 2", total: 40},
+  {id: 2, title: "Task 3", total: 60}
 ];
 
 class Table extends React.Component {
