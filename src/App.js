@@ -4,6 +4,7 @@ import SimpleCard from './components/card';
 import './App.css';
 import NavBar from "./components/header";
 import {Container} from "@material-ui/core";
+// import Upload from "./components/upload";
 
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
 
       <NavBar/>
       <>
-        {months.map(month => <SimpleCard title={month}/>)}
+        {/*{months.map(month => <SimpleCard title={month}/>)}*/}
+        <SimpleCard/>
       </>
       <Container>
         <Button href='' type='button' variant="contained" color="primary"

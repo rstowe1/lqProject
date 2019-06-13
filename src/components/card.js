@@ -3,7 +3,8 @@ import {makeStyles} from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-import Table from './table'
+// import Table from './table'
+import Upload from "./upload";
 
 const useStyles = makeStyles({
   card: {
@@ -32,7 +33,7 @@ export default function SimpleCard(props) {
           <h1>{props.title}</h1>
         </Typography>
         <Typography variant="body2" component="p">
-          <Table/>
+          <Upload/>
         </Typography>
       </CardContent>
     </Card>
