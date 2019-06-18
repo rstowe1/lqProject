@@ -5,6 +5,8 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 // import Table from './table'
 import Upload from "./upload";
+import Table from "./table";
+// import Table from "./table";
 
 const useStyles = makeStyles({
   card: {
@@ -29,12 +31,14 @@ export default function SimpleCard(props) {
   return (
     <Card className={classes.card}>
       <CardContent>
-        <Typography className={classes.title} variant="h1" component="h2">
+        <Typography className={classes.title} variant="h1">
           <h1>{props.title}</h1>
         </Typography>
         <Typography variant="body2" component="p">
-          <Upload/>
+          <h5>Monthly Payments</h5>
         </Typography>
+        <Upload/>
+        {/*<Table/>*/}
       </CardContent>
     </Card>
   );

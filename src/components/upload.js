@@ -1,5 +1,5 @@
 import React from "react";
-import { FilePond, registerPlugin } from "react-filepond";
+import {FilePond, registerPlugin} from "react-filepond";
 
 // Import FilePond styles
 import "filepond/dist/filepond.min.css";

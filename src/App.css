@@ -7,9 +7,12 @@
   margin-right: 25px;
 }
 
+.Month1{
+  align: left;
+}
+
 #submitButton {
-  text-align: center;
+  /*text-align: center;*/
   margin-top: 20px;
   margin-bottom: 10px;
-  margin-left: 45%;
 }
