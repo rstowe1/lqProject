@@ -5,17 +5,21 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 // import Table from './table'
 import Upload from "./upload";
-import Table from "./table";
 // import Table from "./table";
 
 const useStyles = makeStyles({
   card: {
-    minWidth: 275,
+    // minWidth: 275,
+    borderRadius:'20px',
+    paddingLeft: '5px',
+    padding: '20px',
+    marginLeft:'24px',
+    marginRight:'24px'
   },
   bullet: {
     display: 'inline-block',
-    margin: '0 2px 10px 5px',
-    padding: '0 5px 5px 0',
+    margin: '2px 2px 10px 5px',
+    padding: '2px 5px 5px 0',
     transform: 'scale(0.8)',
   },
   title: {

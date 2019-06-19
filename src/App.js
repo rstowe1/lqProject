@@ -4,17 +4,13 @@ import SimpleCard from './components/card';
 import './App.css';
 import NavBar from "./components/header";
 import {Container} from "@material-ui/core";
-import {Grid, Row, Col} from 'react-flexbox-grid';
+import {Row, Col} from 'react-flexbox-grid';
 
 // import Table from './components/table'
 
 
 function App() {
-  const monthNames = ["January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December", "January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December",
-  ];
-  const d = new Date();
+
 
 
   return (
@@ -31,13 +27,13 @@ function App() {
       <Row>
         {/*{months.map(month => <SimpleCard title={month}/>)}*/}
         <Col xs={4}>
-          <SimpleCard title={monthNames[d.getMonth() - 1]}/>
+          <SimpleCard title='First Reconciled Month'/>
         </Col>
         <Col xs={4}>
-          <SimpleCard title={monthNames[d.getMonth() - 3]}/>
+          <SimpleCard title='Second Reconciled Month'/>
         </Col>
         <Col xs={4}>
-          <SimpleCard title={monthNames[d.getMonth() - 5]}/>
+          <SimpleCard title='Third Reconciled Month'/>
         </Col>
       </Row>
       <Row>
@@ -50,13 +46,13 @@ function App() {
       <Row>
         {/*{months.map(month => <SimpleCard title={month}/>)}*/}
         <Col xs={4}>
-          <SimpleCard title={monthNames[d.getMonth() - 1]}/>
+          <SimpleCard title='First Reconciled Month'/>
         </Col>
         <Col xs={4}>
-          <SimpleCard title={monthNames[d.getMonth() - 3]}/>
+          <SimpleCard title='Second Reconciled Month'/>
         </Col>
         <Col xs={4}>
-          <SimpleCard title={monthNames[d.getMonth() - 5]}/>
+          <SimpleCard title='Third Reconciled Month'/>
         </Col>
       </Row>
       <Container>

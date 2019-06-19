@@ -22,18 +22,14 @@ class Upload extends React.Component {
       // Set initial files, type 'local' means this is a file
       // that has already been uploaded to the server (see docs)
       files: [
-        // {
-        //   source: "",
-        //   options: {
-        //     type: "local"
-        //   }
-        // }
+
+
       ]
     };
   }
 
   handleInit() {
-    console.log("FilePond instance has initialised", this.pond);
+    // console.log("FilePond instance has initialised", this.pond);
   }
 
   render() {
