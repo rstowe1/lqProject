@@ -6,11 +6,13 @@ import logo from '../LQ_Logo.png'
 
 const NavBar = () => {
   return (
-    <div>
+    <div >
       <AppBar className='nav-bar' position="static" color='transparent'>
         <Toolbar>
           <Typography variant="title">
-            <a><img src={logo} alt='LQ LOGO' width={182} height={64}/></a>
+            <>
+              <img className='LqLogo' href="" src={logo} alt='LQ LOGO' width={182} height={64}/>
+            </>
           </Typography>
         </Toolbar>
       </AppBar>

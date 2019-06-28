@@ -29,7 +29,7 @@ class Upload extends React.Component {
   }
 
   handleInit() {
-    // console.log("FilePond instance has initialised", this.pond);
+    console.log("FilePond instance has initialised", this.pond);
   }
 
   render() {
