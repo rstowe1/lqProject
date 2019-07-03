@@ -7,6 +7,7 @@ import {Container} from "@material-ui/core";
 import {Row, Col} from 'react-flexbox-grid';
 import ResultsCard from "./components/results";
 
+
 // import Table from './components/table'
 
 
@@ -21,15 +22,27 @@ class App extends Component {
     this.setState({
       showComponent: bool
     });
-  }
+  };
 
   render() {
 
 
     return (
       <div className='root'>
-
         <NavBar/>
+        <Container>
+          <Row>
+            <Col xs={12}>
+              <Row center="xs">
+                <Button href='' onClick={this._showComponent.bind(null, true)} type='button' variant="contained"
+                        color="primary"
+                        className='submitButton' id='submitButton'>
+                  Submit
+                </Button>
+              </Row>
+            </Col>
+          </Row>
+        </Container>
 
         {/*CLIENT DATA*/}
         <Row>
@@ -63,7 +76,7 @@ class App extends Component {
         <Row>
           {/*{months.map(month => <SimpleCard title={month}/>)}*/}
           <Col xs={4}>
-            <SimpleCard title='First Reconciled Month'/>
+            <SimpleCard title='First Reconciled Month' server={'https://drive.google.com/drive/folders/1_r6W5EGrRpslE9dhhsZ4OuQ_pRJCA9kY?usp=sharing'}/>
           </Col>
           <Col xs={4}>
             <SimpleCard title='Second Reconciled Month'/>
@@ -73,30 +86,25 @@ class App extends Component {
           </Col>
         </Row>
 
-        <Container>
-          <Row>
-            <Col xs={12}>
-              <Row center="xs">
-                <Button href='' onClick={this._showComponent.bind(null, true)} type='button' variant="contained"
-                        color="primary"
-                        className='submitButton' id='submitButton'>
-                  Submit
-                </Button>
-              </Row>
-            </Col>
-          </Row>
-        </Container>
 
         {/*RESULTS */}
         <Row>
+          <Col xs={12}>
+            <Row center="xs">
+              {this.state.showComponent && <h1>Reconciliation Results</h1>}
+            </Row>
+          </Col>
+        </Row>
+        <Row>
           <Col xs={4}>
-            {this.state.showComponent && (<ResultsCard title='first month results'/>)}
+            {this.state.showComponent && (<ResultsCard title='first month results' href="../../files/lq_month_1.csv"/>)}
           </Col>
           <Col xs={4}>
-            {this.state.showComponent && (<ResultsCard title='second month results'/>)}
+            {this.state.showComponent && (
+              <ResultsCard title='second month results' href="../../files/lq_month_1.csv"/>)}
           </Col>
           <Col xs={4}>
-            {this.state.showComponent && (<ResultsCard title='third month results'/>)}
+            {this.state.showComponent && (<ResultsCard title='third month results' href="../../files/lq_month_1.csv"/>)}
           </Col>
         </Row>
 

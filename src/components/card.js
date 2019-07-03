@@ -4,7 +4,9 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 // import Table from './table'
-import Upload from "./upload";
+import {FilePond, registerPlugin} from "react-filepond";
+import "filepond/dist/filepond.min.css";
+
 
 // STYLES
 const useStyles = makeStyles({
@@ -13,7 +15,8 @@ const useStyles = makeStyles({
     paddingLeft: '5px',
     padding: '20px',
     marginLeft:'24px',
-    marginRight:'24px'
+    marginRight:'24px',
+    marginBottom: '10px'
   },
   bullet: {
     display: 'inline-block',
@@ -40,7 +43,7 @@ export default function SimpleCard(props) {
         <Typography variant="body2" component="p">
           <h5>Monthly Payments</h5>
         </Typography>
-        <Upload/>
+        <FilePond allowMultiple={false} server={props.server}/>
         {/*<Table/>*/}
       </CardContent>
     </Card>

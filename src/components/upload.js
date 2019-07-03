@@ -3,6 +3,7 @@ import {FilePond, registerPlugin} from "react-filepond";
 
 // Import FilePond styles
 import "filepond/dist/filepond.min.css";
+import FilePondPluginFileRename from 'filepond-plugin-file-rename';
 
 // Import the Image EXIF Orientation and Image Preview plugins
 // Note: These need to be installed separately
@@ -12,6 +13,7 @@ import "filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css";
 
 // Register the plugins
 registerPlugin(FilePondPluginImageExifOrientation, FilePondPluginImagePreview);
+registerPlugin(FilePondPluginFileRename);
 
 // Our app
 class Upload extends React.Component {
@@ -28,6 +30,8 @@ class Upload extends React.Component {
     };
   }
 
+
+
   handleInit() {
     console.log("FilePond instance has initialised", this.pond);
   }
@@ -41,7 +45,7 @@ class Upload extends React.Component {
           files={this.state.files}
           allowMultiple={true}
           maxFiles={3}
-          server="/api"
+          server='http://localhost:3000'
           oninit={() => this.handleInit()}
           onupdatefiles={fileItems => {
             // Set currently active file objects to this.state

@@ -12,7 +12,8 @@ const useStyles = makeStyles({
     paddingLeft: '5px',
     padding: '20px',
     marginLeft: '24px',
-    marginRight: '24px'
+    marginRight: '24px',
+    marginBottom: '15px'
   },
   bullet: {
     display: 'inline-block',
@@ -36,7 +37,7 @@ export default function SimpleCard(props) {
         <Typography className={classes.title} variant="h1">
           <h1>{props.title}</h1>
         </Typography>
-        <a href="../../files/lq_month_1.csv" className="far fa-file-excel" target='_blank' download>Download</a>
+        <a href={props.href} className="far fa-file-excel" target='_blank' download>Download</a>
       </CardContent>
     </Card>
   );
