@@ -53,7 +53,6 @@ class App extends Component {
           </Col>
         </Row>
         <Row>
-          {/*{months.map(month => <SimpleCard title={month}/>)}*/}
           <Col xs={4}>
             <SimpleCard title='First Reconciled Month'/>
           </Col>
@@ -76,7 +75,7 @@ class App extends Component {
         <Row>
           {/*{months.map(month => <SimpleCard title={month}/>)}*/}
           <Col xs={4}>
-            <SimpleCard title='First Reconciled Month' server={'https://drive.google.com/drive/folders/1_r6W5EGrRpslE9dhhsZ4OuQ_pRJCA9kY?usp=sharing'}/>
+            <SimpleCard title='First Reconciled Month' server={`https://54.161.134.14/`}/>
           </Col>
           <Col xs={4}>
             <SimpleCard title='Second Reconciled Month'/>
