@@ -37,7 +37,7 @@ export default function SimpleCard(props) {
         <Typography className={classes.title} variant="h1">
           <h1>{props.title}</h1>
         </Typography>
-        <a href={props.href} className="far fa-file-excel" target='_blank' download>Download</a>
+        <a href={props.href} className="far fa-file-excel" target='_blank' rel="noopener noreferrer" download>Download</a>
       </CardContent>
     </Card>
   );

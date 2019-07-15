@@ -75,7 +75,7 @@ class App extends Component {
         <Row>
           {/*{months.map(month => <SimpleCard title={month}/>)}*/}
           <Col xs={4}>
-            <SimpleCard title='First Reconciled Month' server={`https://54.161.134.14/`}/>
+            <SimpleCard title='First Reconciled Month'/>
           </Col>
           <Col xs={4}>
             <SimpleCard title='Second Reconciled Month'/>
@@ -90,20 +90,23 @@ class App extends Component {
         <Row>
           <Col xs={12}>
             <Row center="xs">
-              {this.state.showComponent && <h1>Reconciliation Results</h1>}
+              {this.state.showComponent &&
+              <h1>Reconciliation Results</h1>}
             </Row>
           </Col>
         </Row>
         <Row>
           <Col xs={4}>
-            {this.state.showComponent && (<ResultsCard title='first month results' href="../../files/lq_month_1.csv"/>)}
+            {this.state.showComponent &&
+            (<ResultsCard title='first month results' href="../../files/finished/month1.csv"/>)}
           </Col>
           <Col xs={4}>
-            {this.state.showComponent && (
-              <ResultsCard title='second month results' href="../../files/lq_month_1.csv"/>)}
+            {this.state.showComponent &&
+            (<ResultsCard title='second month results' href="../../files/finished/month2.csv"/>)}
           </Col>
           <Col xs={4}>
-            {this.state.showComponent && (<ResultsCard title='third month results' href="../../files/lq_month_1.csv"/>)}
+            {this.state.showComponent &&
+            (<ResultsCard title='third month results' href="../../files/finished/month3.csv"/>)}
           </Col>
         </Row>
 

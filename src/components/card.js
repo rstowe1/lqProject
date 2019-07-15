@@ -4,10 +4,10 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import axios from 'axios';
 // import "filepond/dist/filepond.min.css";
-import {makeStyles} from '@material-ui/core/styles';
+// import {makeStyles} from '@material-ui/core/styles';
 // import Table from './table'
 // import Upload from './upload';
-import {FilePond} from "react-filepond";
+// import {FilePond} from "react-filepond";
 
 
 // STYLES
