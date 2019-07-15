@@ -4,10 +4,10 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import axios from 'axios';
 // import "filepond/dist/filepond.min.css";
-// import {makeStyles} from '@material-ui/core/styles';
+import {makeStyles} from '@material-ui/core/styles';
 // import Table from './table'
 // import Upload from './upload';
-// import {FilePond} from "react-filepond";
+import {FilePond} from "react-filepond";
 
 
 // STYLES
@@ -33,7 +33,7 @@ import axios from 'axios';
 //     marginBottom: 12,
 //   },
 // });
-
+//
 // export default function SimpleCard(props) {
 //   const classes = useStyles();
 //   return (
@@ -45,7 +45,7 @@ import axios from 'axios';
 //         <Typography variant="body2" component="p">
 //           <h5>Monthly Payments</h5>
 //         </Typography>
-//         <FilePond server={props.server}
+//         <FilePond server='http://localhost:8000/upload'
 //                   process='post'/>
 //         {/*<Table/>*/}
 //       </CardContent>
@@ -73,30 +73,31 @@ class SimpleCard extends React.Component {
       selectedFile: event.target.files[0],
       loaded: 0,
     })
-  }
+  };
 
   onClickHandler = () => {
-    const data = new FormData()
-    data.append('file', this.state.selectedFile)
-    axios.post("http://localhost:8000/upload", data, {
+    const data = new FormData();
+    console.log(data);
+    data.append('file', this.state.selectedFile);
+    axios.post(`http://localhost:8000/upload`, data, {
       // receive two    parameter endpoint url ,form data
     }).then(res => { // then print response status
       console.log(res.statusText)
     })
-  }
+  };
 
   render() {
     return (
       <Card>
         <CardContent>
-          <Typography variant="h1">
-            {/*<h1>{props.title}</h1>*/}
-          </Typography>
+          {/*<Typography variant="h1">*/}
+          {/*  <h1>{props.title}</h1>*/}
+          {/*</Typography>*/}
           <Typography variant="body2" component="p">
             <h5>Monthly Payments</h5>
           </Typography>
           <div className="form-group files">
-            <label>Upload</label>
+            {/*<label>Upload</label>*/}
             <input type="file" name="file" onChange={this.onChangeHandler}/>
             <button type="button" className="btn btn-success btn-block" onClick={this.onClickHandler}>Upload</button>
           </div>

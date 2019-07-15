@@ -11,11 +11,11 @@ var storage = multer.diskStorage({
     cb(null, 'public/files/upload')
   },
   filename: function (req, file, cb) {
-    cb(null, Date.now() + '-' +file.originalname )
+    cb(null, file.originalname )
   }
-})
+});
 
-var upload = multer({ storage: storage }).single('file')
+var upload = multer({ storage: storage }).single('file');
 
 app.post('/upload',function(req, res) {
 
