@@ -98,15 +98,15 @@ class App extends Component {
         <Row>
           <Col xs={4}>
             {this.state.showComponent &&
-            (<ResultsCard title='first month results' href="../../files/finished/month1.csv"/>)}
+            (<ResultsCard title='first month results' href="../../files/scripts/query_results/month1.csv"/>)}
           </Col>
           <Col xs={4}>
             {this.state.showComponent &&
-            (<ResultsCard title='second month results' href="../../files/finished/month2.csv"/>)}
+            (<ResultsCard title='second month results' href="../../files/scripts/query_results/month2.csv"/>)}
           </Col>
           <Col xs={4}>
             {this.state.showComponent &&
-            (<ResultsCard title='third month results' href="../../files/finished/month3.csv"/>)}
+            (<ResultsCard title='third month results' href="../../files/scripts/query_results/month3.csv"/>)}
           </Col>
         </Row>
 
