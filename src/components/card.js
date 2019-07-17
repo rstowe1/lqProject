@@ -30,7 +30,7 @@ class SimpleCard extends React.Component {
     const data = new FormData();
     console.log(data);
     data.append('file', this.state.selectedFile);
-    axios.post('https://ryan-test.com', data, {
+    axios.post('https://ryan-test.com/upload', data, {
       // receive two    parameter endpoint url ,form data
     }).then(res => { // then print response status
       console.log(res.statusText)
