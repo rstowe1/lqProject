@@ -3,6 +3,7 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import axios from 'axios';
+import uploadToS3 from './upload';
 
 // TUTORIAL
 // https://programmingwithmosh.com/javascript/react-file-upload-proper-server-side-nodejs-easy/
@@ -29,7 +30,7 @@ class SimpleCard extends React.Component {
     const data = new FormData();
     console.log(data);
     data.append('file', this.state.selectedFile);
-    axios.post(`http://localhost:8000/upload`, data, {
+    axios.post(`http://ryan-test.com/upload`, data, {
       // receive two    parameter endpoint url ,form data
     }).then(res => { // then print response status
       console.log(res.statusText)
