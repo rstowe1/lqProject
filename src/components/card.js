@@ -28,8 +28,8 @@ class SimpleCard extends React.Component {
 
   onClickHandler = () => {
     const data = new FormData();
-    // const URL = "http://localhost:8000/upload";
-    const URL = "http://192.168.0.125:3000/upload";
+    const URL = "http://localhost:8000/upload";
+    // const URL = "http://192.168.0.125:3000/upload";
 
     data.append('file', this.state.selectedFile);
     axios.post(URL, data, {
