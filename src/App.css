@@ -99,3 +99,7 @@ html, body {
   text-transform: capitalize;
   text-align: center;
 }
+#process{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

@@ -7,6 +7,12 @@ import {Container} from "@material-ui/core";
 import {Row, Col} from 'react-flexbox-grid';
 import ResultsCard from "./components/results";
 
+import populateDb1 from './upload';
+import populateDb2 from './upload2';
+import populateDb3 from './upload3';
+import populateLqDb1 from './upload_LQ1';
+import populateLqDb2 from './upload_LQ2';
+import populateLqDb3 from './upload_LQ3';
 
 // import Table from './components/table'
 
@@ -24,6 +30,7 @@ class App extends Component {
     });
   };
 
+
   render() {
 
 
@@ -40,6 +47,52 @@ class App extends Component {
                   Submit
                 </Button>
               </Row>
+            </Col>
+          </Row>
+
+          <Row center="xs">
+            <Col xs={2}>
+              <Button href='' onClick={() => populateDb1} type='button' variant="contained"
+                      color="primary"
+                      className='runOne'
+                      id='process'>
+                Step 1
+              </Button>
+            </Col>
+            <Col xs={2}>
+              <Button href='' onClick={() => populateDb2} type='button' variant="contained"
+                      color="primary"
+                      className='runTow' id='process'>
+                Step 2
+              </Button>
+            </Col>
+            <Col xs={2}>
+              <Button href='' onClick={() => populateDb3} type='button' variant="contained"
+                      color="primary"
+                      className='runThree' id='process'>
+                Step 3
+              </Button>
+            </Col>
+            <Col xs={2}>
+              <Button href='' onClick={() => populateLqDb1} type='button' variant="contained"
+                      color="primary"
+                      className='runFour' id='process'>
+                Step 4
+              </Button>
+            </Col>
+            <Col xs={2}>
+              <Button href='' onClick={() => populateLqDb2} type='button' variant="contained"
+                      color="primary"
+                      className='runFive' id='process'>
+                Step 5
+              </Button>
+            </Col>
+            <Col xs={2}>
+              <Button href='' onClick={() => populateLqDb3} type='button' variant="contained"
+                      color="primary"
+                      className='runSix' id='process'>
+                Step 6
+              </Button>
             </Col>
           </Row>
         </Container>
@@ -87,6 +140,11 @@ class App extends Component {
 
 
         {/*RESULTS */}
+
+
+
+
+
         <Row>
           <Col xs={12}>
             <Row center="xs">
@@ -95,6 +153,7 @@ class App extends Component {
             </Row>
           </Col>
         </Row>
+
         <Row>
           <Col xs={4}>
             {this.state.showComponent &&
