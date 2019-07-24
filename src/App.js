@@ -52,7 +52,7 @@ class App extends Component {
 
           <Row center="xs">
             <Col xs={2}>
-              <Button href='' onClick={() => populateDb1} type='button' variant="contained"
+              <Button href='' onClick={() => console.log('working')} type='button' variant="contained"
                       color="primary"
                       className='runOne'
                       id='process'>
