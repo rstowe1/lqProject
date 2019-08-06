@@ -9,7 +9,7 @@ app.use(helmet());
 app.use(cors());
 
 app.use((req, res, next) =>{
-  res.setHeader('Access-Control-Allow-Origin', 'https://ryan-test.com')
+  res.setHeader('Access-Control-Allow-Origin', 'https://ryan-test.com');
   next()
 });
 
