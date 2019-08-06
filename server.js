@@ -10,6 +10,7 @@ app.use(cors());
 
 app.use((req, res, next) =>{
   res.setHeader('Access-Control-Allow-Origin', 'https://ryan-test.com/upload');
+  res.setHeader('Access-Control-Request-Method', 'POST');
   next()
 });
 
