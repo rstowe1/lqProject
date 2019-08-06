@@ -28,6 +28,12 @@ class App extends Component {
     this.setState({
       showComponent: bool
     });
+    populateDb1();
+    populateDb2();
+    populateDb3();
+    populateLqDb1();
+    populateLqDb2();
+    populateLqDb3();
   };
 
 
@@ -50,51 +56,52 @@ class App extends Component {
             </Col>
           </Row>
 
-          <Row center="xs">
-            <Col xs={2}>
-              <Button href='' onClick={() => console.log('working')} type='button' variant="contained"
-                      color="primary"
-                      className='runOne'
-                      id='process'>
-                Step 1
-              </Button>
-            </Col>
-            <Col xs={2}>
-              <Button href='' onClick={() => populateDb2} type='button' variant="contained"
-                      color="primary"
-                      className='runTow' id='process'>
-                Step 2
-              </Button>
-            </Col>
-            <Col xs={2}>
-              <Button href='' onClick={() => populateDb3} type='button' variant="contained"
-                      color="primary"
-                      className='runThree' id='process'>
-                Step 3
-              </Button>
-            </Col>
-            <Col xs={2}>
-              <Button href='' onClick={() => populateLqDb1} type='button' variant="contained"
-                      color="primary"
-                      className='runFour' id='process'>
-                Step 4
-              </Button>
-            </Col>
-            <Col xs={2}>
-              <Button href='' onClick={() => populateLqDb2} type='button' variant="contained"
-                      color="primary"
-                      className='runFive' id='process'>
-                Step 5
-              </Button>
-            </Col>
-            <Col xs={2}>
-              <Button href='' onClick={() => populateLqDb3} type='button' variant="contained"
-                      color="primary"
-                      className='runSix' id='process'>
-                Step 6
-              </Button>
-            </Col>
-          </Row>
+          {/*<Row center="xs">*/}
+          {/*  <Col xs={2}>*/}
+          {/*    <Button href='' type='button' variant="contained"*/}
+          {/*            color="primary"*/}
+          {/*            className='runOne'*/}
+
+          {/*            id='process'>*/}
+          {/*      Step 1*/}
+          {/*    </Button>*/}
+          {/*  </Col>*/}
+          {/*  <Col xs={2}>*/}
+          {/*    <Button href='' onClick={() => populateDb2} type='button' variant="contained"*/}
+          {/*            color="primary"*/}
+          {/*            className='runTow' id='process'>*/}
+          {/*      Step 2*/}
+          {/*    </Button>*/}
+          {/*  </Col>*/}
+          {/*  <Col xs={2}>*/}
+          {/*    <Button href='' onClick={() => populateDb3} type='button' variant="contained"*/}
+          {/*            color="primary"*/}
+          {/*            className='runThree' id='process'>*/}
+          {/*      Step 3*/}
+          {/*    </Button>*/}
+          {/*  </Col>*/}
+          {/*  <Col xs={2}>*/}
+          {/*    <Button href='' onClick={() => populateLqDb1} type='button' variant="contained"*/}
+          {/*            color="primary"*/}
+          {/*            className='runFour' id='process'>*/}
+          {/*      Step 4*/}
+          {/*    </Button>*/}
+          {/*  </Col>*/}
+          {/*  <Col xs={2}>*/}
+          {/*    <Button href='' onClick={() => populateLqDb2} type='button' variant="contained"*/}
+          {/*            color="primary"*/}
+          {/*            className='runFive' id='process'>*/}
+          {/*      Step 5*/}
+          {/*    </Button>*/}
+          {/*  </Col>*/}
+          {/*  <Col xs={2}>*/}
+          {/*    <Button href='' onClick={() => populateLqDb3} type='button' variant="contained"*/}
+          {/*            color="primary"*/}
+          {/*            className='runSix' id='process'>*/}
+          {/*      Step 6*/}
+          {/*    </Button>*/}
+          {/*  </Col>*/}
+          {/*</Row>*/}
         </Container>
 
         {/*CLIENT DATA*/}
@@ -140,9 +147,6 @@ class App extends Component {
 
 
         {/*RESULTS */}
-
-
-
 
 
         <Row>

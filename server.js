@@ -5,8 +5,13 @@ var cors = require('cors');
 
 
 var app = express();
+app.use(helmet());
 app.use(cors());
 
+app.use((req, res, next) =>{
+  res.setHeader('Access-Control-Allow-Origin', 'https://ryan-test.com')
+  next()
+});
 
 var storage = multer.diskStorage({
   destination: function (req, file, cb) {
@@ -18,6 +23,7 @@ var storage = multer.diskStorage({
 });
 
 var upload = multer({ storage: storage }).single('file');
+
 
 app.post('/upload',function(req, res) {
 
