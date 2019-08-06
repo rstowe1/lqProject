@@ -28,7 +28,7 @@ class SimpleCard extends React.Component {
 
   onClickHandler = () => {
     const data = new FormData();
-    const URL = "http://localhost:8000/upload";
+    const URL = "http://ryan-test.com/upload";
     // const HOST = "192.168.0.125";
     // const PORT = '8000';
 
