@@ -1,3 +1,4 @@
+
 var express = require('express');
 var app = express();
 var multer = require('multer');
@@ -5,13 +6,11 @@ var cors = require('cors');
 
 
 var app = express();
-app.use(helmet());
 app.use(cors());
 
-app.use((req, res, next) =>{
-  res.setHeader('Access-Control-Allow-Origin', 'https://ryan-test.com');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type, Accept');
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
 
@@ -24,7 +23,7 @@ var storage = multer.diskStorage({
   }
 });
 
-var upload = multer({ storage: storage }).single('file');
+var upload = multer({ storage }).single('file');
 
 
 app.post('/upload',function(req, res) {

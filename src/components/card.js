@@ -26,20 +26,17 @@ class SimpleCard extends React.Component {
     })
   };
 
+
   onClickHandler = () => {
-    const data = new FormData();
-    const URL = "https://ryan-test.com";
-    // const HOST = "192.168.0.125";
-    // const PORT = '8000';
-
-
-    data.append('file', this.state.selectedFile);
-    axios.post(URL, data, {
-       // receive two    parameter endpoint url ,form data
-   }).then(res => { // then print response status
-    console.log(res.statusText)
- })
-};
+    const data = new FormData()
+    data.append('file', this.state.selectedFile)
+    axios.post("http://localhost:8000/upload", data, {
+      // receive two    parameter endpoint url ,form data
+    })
+      .then(res => { // then print response status
+        console.log(res.statusText)
+      })
+  };
 
   render() {
     return (
