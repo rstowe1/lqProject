@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74814c62-51b9-4917-8b91-5663f577471b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/CD 1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -122,7 +122,7 @@
       <workItem from="1565113845046" duration="1372000" />
       <workItem from="1566054324539" duration="4393000" />
       <workItem from="1566059050997" duration="487000" />
-      <workItem from="1566222918182" duration="679000" />
+      <workItem from="1566222918182" duration="1182000" />
     </task>
     <servers />
   </component>
