@@ -6,10 +6,10 @@ const populateDb1 = () => {
 	const mysql = require('mysql');
 
 	const connection = mysql.createConnection({
-		host: 'jw0ch9vofhcajqg7.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-		user: 'gqo0y3mtis7cgcuq',
-		password: 'f84ne96dt40umhum',
-		database: 'bo8jfv7o9elq9gll',
+		host: 'localhost',
+		user: 'root',
+		password: 'root',
+		database: 'testdb',
 		
 	});
 
