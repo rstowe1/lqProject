@@ -30,7 +30,7 @@ class SimpleCard extends React.Component {
   onClickHandler = () => {
     const data = new FormData()
     data.append('file', this.state.selectedFile)
-    axios.post("https://www.ryan-test.com/", data, {
+    axios.post("https://5d5aac9e04328200086390c7--ryanstest.netlify.com/", data, {
       // receive two    parameter endpoint url ,form data
     })
       .then(res => { // then print response status
